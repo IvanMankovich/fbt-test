@@ -1,0 +1,23 @@
+@import './../../styles/colors.scss';
+@import './../../styles/sizes.scss';
+@import './../../styles/mixins.scss';
+
+main {
+  @include flex(column, flex-start, center);
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $module-bckg;
+  padding: $module-p;
+
+  @media only screen and (min-width: 640px) {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  @media only screen and (min-width: 1280px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+}

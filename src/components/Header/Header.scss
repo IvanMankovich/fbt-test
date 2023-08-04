@@ -1,0 +1,14 @@
+@import './../../styles/colors.scss';
+@import './../../styles/sizes.scss';
+
+.Header {
+  height: $header-height;
+  width: 100%;
+  background-color: $pist1;
+  padding: $header-p;
+
+  > h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}

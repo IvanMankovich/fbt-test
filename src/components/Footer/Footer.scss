@@ -1,0 +1,14 @@
+@import './../../styles/colors.scss';
+@import './../../styles/sizes.scss';
+
+.Footer {
+  height: $footer-height;
+  width: 100%;
+  background-color: $block-bckg;
+  padding: $footer-p;
+
+  > p {
+    margin: 0;
+    width: 100%;
+  }
+}

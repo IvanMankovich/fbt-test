@@ -1,0 +1,40 @@
+@import './../../styles/colors.scss';
+@import './../../styles/mixins.scss';
+@import './../../styles/sizes.scss';
+
+.SearchForm {
+  @include flex(column, flex-start, center);
+  width: 100%;
+  margin: $form-m;
+  padding: $form-p;
+  background-color: $block-bckg;
+  border-radius: $border-radius;
+  border: $border-thick solid $block-border;
+
+  & > section {
+    @include flex(column, center, center);
+    width: 100%;
+
+    & > * {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: $form-sect-m;
+      }
+    }
+
+    @media only screen and (min-width: 640px) {
+      flex-direction: row;
+
+      & > * {
+        width: auto;
+        margin-top: 0;
+
+        &:not(:first-child) {
+          margin-top: unset;
+          margin-left: $form-sect-m;
+        }
+      }
+    }
+  }
+}

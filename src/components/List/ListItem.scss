@@ -1,0 +1,44 @@
+@import './../../styles/colors.scss';
+@import './../../styles/misc.scss';
+@import './../../styles/sizes.scss';
+@import './../../styles/mixins.scss';
+
+.ListItem {
+  @include flex(column, flex-start, stretch);
+  width: 100%;
+  background-color: $block-bckg;
+  border-radius: $border-radius;
+  border: $border-thick solid $block-border;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  transition: $transition;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $block-bckg-hov;
+  }
+
+  &__header {
+    @include flex(row, space-between, center);
+    padding: $litem-p-y $litem-p-x;
+    border-bottom: $border-thick solid $block-border;
+  }
+
+  &__content {
+    @include flex(column, space-between, flex-start);
+    padding: $litem-p-y $litem-p-x;
+
+    & > * {
+      padding: 0.5rem 0;
+      margin: 0;
+      width: 100%;
+      overflow-wrap: break-word;
+
+      &:not(:first-child) {
+        border-top: 0.1rem solid #61616188;
+      }
+    }
+  }
+}

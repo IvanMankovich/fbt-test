@@ -1,0 +1,30 @@
+@import './../../styles/colors.scss';
+@import './../../styles/sizes.scss';
+@import './../../styles/misc.scss';
+
+.Button {
+  padding: $btn-p-y $btn-p-x;
+  background-color: $btn-bckg;
+  border-radius: $border-radius;
+  border: $border-thick solid $btn-border;
+  color: $text-color;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $btn-border-hov;
+    background-color: $btn-bckg-hov;
+
+    &:disabled {
+      border-color: $btn-border-dis;
+      background-color: $btn-bckg-dis;
+      color: $text-color-dis;
+    }
+  }
+
+  &:disabled {
+    border-color: $btn-border-dis;
+    background-color: $btn-bckg-dis;
+    color: $text-color-dis;
+  }
+}

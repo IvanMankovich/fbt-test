@@ -1,0 +1,31 @@
+@import './parlette.scss';
+
+// refs
+$app-bckg: $pist2;
+$module-bckg: $pist3;
+$module-border: $pist5;
+
+$block-bckg: $pist4;
+$block-bckg-hov: $pist2;
+$block-border: $pist1;
+$block-border-dis: $pist1;
+$block-border-hov: $pist1;
+
+$input-bckg: $pist5;
+$input-bckg-dis: $pist2;
+$input-bckg-hov: $pist3;
+$input-border: $pist1;
+$input-border-dis: $pist2;
+$input-border-hov: $pist6;
+
+$btn-bckg: $pist1;
+$btn-bckg-dis: $pist2;
+$btn-bckg-hov: $pist4;
+$btn-border: $pist1;
+$btn-border-dis: $pist1;
+$btn-border-hov: $pist6;
+
+$text-color: $pist9;
+$text-color-dis: $pist9;
+
+$overlay: $black50;

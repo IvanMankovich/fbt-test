@@ -1,0 +1,30 @@
+@import './../../styles/colors.scss';
+@import './../../styles/sizes.scss';
+@import './../../styles/mixins.scss';
+@import './../../styles/misc.scss';
+
+.Input {
+  padding: $input-p-y $input-p-x;
+  background-color: $input-bckg;
+  border-radius: $border-radius;
+  border: $border-thick solid $input-border;
+  color: $text-color;
+  transition: $transition;
+
+  &:hover {
+    border-color: $input-border-hov;
+    background-color: $input-bckg-hov;
+
+    &:disabled {
+      border-color: $input-border-dis;
+      background-color: $input-bckg-dis;
+      color: $text-color-dis;
+    }
+  }
+
+  &:disabled {
+    border-color: $input-border-dis;
+    background-color: $input-bckg-dis;
+    color: $text-color-dis;
+  }
+}
